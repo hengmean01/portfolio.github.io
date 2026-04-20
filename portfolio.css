@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{    
+    background: #521c61;
+    background: linear-gradient(90deg, rgba(82, 28, 97, 1) 0%, rgba(163, 12, 196, 1) 100%);
+}
+.header{
+    position:sticky;
+    top: 0;
+    z-index: 100;
+    padding: 20px 15px;
+    background: #521c61;
+    background: linear-gradient(90deg, rgba(82, 28, 97, 1) 0%, rgb(139, 11, 168) 100%);
+}
+#section1, #section2, #section3, #section4 {
+  scroll-margin-top: 120px;
+}
+#navbarNav a.active {
+  color: rgb(240, 43, 240) !important;
+}
+
+/* section1 */
+.front_end{
+    font-size:55px;
+    color: rgb(240, 43, 240);
+    font-weight: 600;
+}
+.name{
+    font-size:25px;
+    color: rgb(240, 43, 240);
+    font-weight: 400;
+}
+.girlcodingimg{
+  transition: 0.8s ease-in-out;
+  cursor: pointer;
+}
+.girlcoding:hover{
+  transform: scale(1.1);
+}
+
+.downloadCV{
+    background-color: rgb(240, 43, 240);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.downloadCV:hover{
+    background-color: rgb(153, 11, 153); 
+    transform: scale(1.1);
+}
+.contactMe, .portfolio{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}  
+.portfolio:hover{
+    border: 1px solid rgb(240, 43, 240);
+    color: rgb(240, 43, 240);
+    transform: scale(1.1);
+} 
+.contactMe:hover{
+    border: 1px solid rgb(240, 43, 240);
+    color: rgb(240, 43, 240);
+    transform: scale(1.1);
+}
+.social_icon{
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+.social_icon:hover{
+    color: rgb(240, 43, 240);
+    transform: scale(1.1);
+}
+
+/* section2 */
+.hi{
+    font-size:25px;
+    color: rgb(240, 43, 240);
+    font-weight: 400;
+}
+.mirrorselca{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    animation: wave 2s infinite ease-in-out;
+}
+.skills{
+    font-size: 25px;
+    color: rgb(240, 43, 240);
+}
+.line{
+    color: white;
+    width: 600px;
+    height: 2px;
+    background-color: white;
+    border: none;
+}
+
+/* section3 */
+.onlinecourse, .dashboard, .kohrong, .submitform, .skin1004{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 20px 10px;
+}
+
+.onlinecourse:hover, .dashboard:hover, .kohrong:hover, .submitform:hover, .skin1004:hover{
+    border: 1px solid rgb(240, 43, 240);
+    color: rgb(240, 43, 240);
+    transform: scale(1.1);
+}
+.portfolioimg{
+    width: 450px;
+    height: 450px;
+}
+.staticPJ{
+    font-size:25px;
+    color: rgb(240, 43, 240);
+    font-weight: 400;
+    
+}
+.behind:nth-child(1){
+    animation-delay: 0.1s;
+}
+.behind:nth-child(2){
+    animation-delay: 0.2s;
+}
+.behind:nth-child(3){
+    animation-delay: 0.3s;
+}
+@keyframes wave{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
+.wrapper{
+    position: relative;
+    width: 700px;
+    height: 470px;
+}
+.wrapper img{
+    width: 50%;
+    height: 70%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 45%;
+    transform: translate(-45%, -50%);
+}
+.behind{
+    text-align: center;
+    top: 25%;
+    position: absolute;
+    font-size: 100px;
+    color: rgb(233, 169, 233);
+    font-weight: 600;
+    z-index: -1;
+    display: inline-block;
+    animation: wave 2s infinite ease-in-out;
+}
+
+/* section4 */
+.git{
+    font-size:55px;
+    color: rgb(240, 43, 240);
+    font-weight: 400;
+}
+.inputname, .inputemail{
+    border: 1px solid white;
+    width: 400px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    text-align: start;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+input:focus {
+  outline: none;
+  box-shadow: none; /* for Bootstrap inputs */
+  border-color: rgb(243, 23, 243); /* optional if you don’t want border color change */
+}
+.message{
+    width: 400px;
+    padding: 90px 90px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    text-align: start;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid white;
+}
+.submit{
+    background-color: rgb(240, 43, 240);
+    border:none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+}
+.submit:hover{
+    background-color: rgb(153, 11, 153); 
+    transform: scale(1.1);
+}
+.phone {
+  position: relative;
+  background: #c061da; /* rectangle background */
+  padding: 40px 20px 20px; 
+  border-radius: 12px;
+  text-align: center;
+  width: 250px; /* optional fixed width */
+}
+
+.phone_icon, .geo_icon {
+  position: absolute;
+  top: -30px; /* move circle halfway outside */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background: #e573f2; /* circle color */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_icon {
+  font-size: 24px;
+  color: white;
+}
+
+.location{
+  position: relative;
+  background: #c061da; /* rectangle background */
+  padding: 40px 20px 20px; 
+  border-radius: 12px;
+  text-align: center;
+  width: 250px; /* optional fixed width */
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* For tablets */
+@media (max-width: 992px) {
+  .front_end {
+    font-size: 40px;
+  }
+
+  .portfolioimg {
+    width: 300px;
+    height: auto;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .behind {
+    font-size: 60px;
+  }
+
+  .inputname,
+  .inputemail,
+  .message {
+    width: 100%;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .homebtn {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+/* For mobile */
+@media (max-width: 576px) {
+  .front_end {
+    font-size: 30px;
+    text-align: center;
+  }
+  .intro{
+    text-align: center;
+  }
+  .homesi{
+    display: none;
+  }
+  .name {
+    font-size: 20px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .homebtn{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .downloadCV, .contactMe, .portfolio{
+    width: 50%;
+    font-size: 14px;
+    align-items: center;
+  }
+  header ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .girlcoding{
+    display: none;
+  }
+  .mirrorselca
+  {
+    width: 40%;
+    height: auto;
+  }
+  .stwoBtnDl{
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .portfolioimg {
+    display: none;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .behind {
+    display: none;
+  }
+  .project1{
+    display: flex;
+    align-items: center;
+  }
+  .onlinecourse{
+    margin-top: 50px;
+    margin-right: 20px;
+  }
+  .project2{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    
+  }
+  .skin1004{
+    margin-bottom: 60px;
+  }
+  .submitform{
+    margin-top: 60px;
+  }
+  .git {
+    font-size: 35px;
+  }
+  .input{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .footer {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .message{
+    height: 100px;
+    width: 100%;
+  }
+  .inputemail::placeholder{
+    font-size: 14px;
+  }
+  .inputname::placeholder{
+    font-size: 14px;
+  }
+  .phone, .location {
+    order: 1;
+    width: 47%;
+    margin-bottom: 20px;
+    height: 110px;
+  }
+  .phone_icon, .geo_icon {
+    top: -20px;
+    width: 50px;
+    height: 50px;
+  }
+  .scm {
+    order: 3;
+    width: 100%;
+  }
+  .scm_icon{
+    justify-content: center;
+  }
+}
