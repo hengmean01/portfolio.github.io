@@ -48,3 +48,16 @@ function submit() {
 //   link.click();
 //   document.body.removeChild(link);
 // }
+
+const btnCalculator = document.querySelector('#calculator');
+const btnCineStream = document.querySelector('#cineStream');
+const btnDashboard = document.querySelector('.dashboard'); // Get the button element with id "calculator"
+btnCalculator.addEventListener('click', () => {
+  window.open('https://hengmean01.github.io/assignment06.github.io/', '_blank'); // Open the calculator.html page in a new tab
+});
+btnCineStream.addEventListener('click', () => {
+  window.open('https://hengmean01.github.io/assignment04.github.io/', '_blank'); // Open the cineStream.html page in a new tab
+});
+btnDashboard.addEventListener('click', () => {
+  window.open('https://hengmean01.github.io/dashboard-tailwind.github.io/', '_blank'); // Open the dashboard.html page in a new tab
+});
