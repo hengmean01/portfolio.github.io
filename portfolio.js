@@ -51,7 +51,8 @@ function submit() {
 
 const btnCalculator = document.querySelector('#calculator');
 const btnCineStream = document.querySelector('#cineStream');
-const btnDashboard = document.querySelector('.dashboard'); // Get the button element with id "calculator"
+const btnDashboard = document.querySelector('.dashboard');
+const btnToDoList = document.querySelector('#toDoList'); // Get the button element with id "calculator"
 btnCalculator.addEventListener('click', () => {
   window.open('https://hengmean01.github.io/assignment06.github.io/', '_blank'); // Open the calculator.html page in a new tab
 });
@@ -60,4 +61,7 @@ btnCineStream.addEventListener('click', () => {
 });
 btnDashboard.addEventListener('click', () => {
   window.open('https://hengmean01.github.io/dashboard-tailwind.github.io/', '_blank'); // Open the dashboard.html page in a new tab
+});
+btnToDoList.addEventListener('click', () => {
+  window.open('https://to-do-list-github-io-woad.vercel.app/', '_blank'); // Open the toDoList.html page in a new tab
 });
